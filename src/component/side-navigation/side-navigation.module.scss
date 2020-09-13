@@ -1,0 +1,31 @@
+.side_navigation {
+    background-color: #06090e;
+    width: 200px;
+    height: calc(100vh - 54px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    box-sizing: border-box;
+
+    a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    }
+    .active{
+        color:#46e1b6;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: -2px;
+            border-right: solid 4px #46e1b6;
+            width: 2px;
+            height: 38px;
+            border-radius: 10px;
+        }
+    }
+}
